@@ -1,0 +1,16 @@
+s=['KOBE','DRY','kanye']
+print('s=',s)
+print(len(s))
+print(s[0])
+print(s[-1])
+s.append('kurry')
+print(s)
+s.insert(1,'paul') 
+print(s)
+s.pop()  
+print(s)
+s.pop(0)
+print(s)
+a=['hah','lbj']
+b=['haden','nash',a,'wade']
+print(b[2][1])
