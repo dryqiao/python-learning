@@ -1,0 +1,4 @@
+def odd(x):
+	odds=list(range(1,x,2))
+	print(odds)
+odd(100)
