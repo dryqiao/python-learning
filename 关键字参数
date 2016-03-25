@@ -1,0 +1,7 @@
+def person(name,age,**kw):
+    print('name:',name,'age:',age,'other:',kw)
+person('kobe',37)
+person('iverson',39,son='answer')
+person('tim',33,city='LA',wife='vaneesa')
+extra={'city':'LA','wife':'vaneesa'}
+person('tim','33',**extra)
