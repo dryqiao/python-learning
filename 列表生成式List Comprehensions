@@ -1,0 +1,15 @@
+L=[]
+for x in range(1,11):
+	L.append(x*x)
+print(L)                   #普通循环
+
+print([x*x for x in range(1,11)])  #列表生成式
+
+print([x*x for x in range(1,11)if x%2==0])#偶数平方
+print([m+n for m in'ABC'for n in 'abc'])   #两层循环，全排列
+d={'x':'A','y':'B','z':'C'}
+for k,v in d.items():
+	print(k,'=',v)      #同时使用两个变量
+
+L=['KOBE','KURRY','EDC']#listn内容小写
+print([s.lower()for s in L])
