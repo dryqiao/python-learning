@@ -1,0 +1,10 @@
+#encoding:UTF-8
+from urllib import request
+
+url="http://baidu.com"
+def getHtml(url):
+	with request.urlopen(url) as f:
+		data=f.read()
+		print('status',f.status)
+	
+print(getHtml(url))
