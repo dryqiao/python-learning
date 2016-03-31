@@ -1,0 +1,20 @@
+class Student(object):
+	def __init__(self,name,score):
+		self.__name=name
+		self.__score=score
+	def print_score(self):
+		print('%s:%s'%(self.__name,self.__score))
+	def get_name(self):      #允许外部获取name和score
+		return self.__name
+	def get_score(self):
+		return self.__score
+	def set_score(self,score):#允许外部修改private变量
+		if 0<=score<=100:		#这样子修改变量，可以避免传入无效的参数
+			self.__score=score
+		else:
+			raise ValueError('bad score')
+kobe=Student('kobe',100)
+#print(kobe.__name)#外部无法访问变量__name
+print(kobe.get_name())#调用get_name可以获取private变量
+kobe.set_score(13)
+print(kobe.get_score())
